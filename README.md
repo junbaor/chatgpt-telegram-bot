@@ -3,7 +3,9 @@
 ![badge:version](https://img.shields.io/badge/version-1.0.5-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
-A ChatGPT bot for Telegram based on Node.js. Works with Cloudflare protection.
+A ChatGPT bot for Telegram based on Node.js. Works with Cloudflare protection.  
+
+This package no longer requires any browser hacks – **it is now using the official OpenAI completions API** with a leaked model that ChatGPT uses under the hood. 🔥
 
 ## Features
 
@@ -30,12 +32,12 @@ A ChatGPT bot for Telegram based on Node.js. Works with Cloudflare protection.
 
 ### Start the server
 
-> **Note** This bot uses a [browser-based ChatGPT API](https://github.com/transitive-bullshit/chatgpt-api), please make sure you have Node.js >= 18 and a Chromium-based browser installed.
+> **Note** This bot uses a [Official ChatGPT API](https://github.com/transitive-bullshit/chatgpt-api), please make sure you have Node.js >= 18 
 
 To get started, follow these steps:
 
 1. Make a copy of the file `.env.example` and rename it as `.env`.
-2. In the `.env` file, enter your OPENAI_API_KEY and Telegram bot token. 
+2. In the `.env` file, enter your [OPENAI_API_KEY](https://platform.openai.com/overview) and Telegram bot token. 
 3. Specify the ID of the users and groups who are permitted to use this bot. Separate multiple IDs with commas (`,`). Note that all members of the specified groups will have access to the bot inside the group. **If you leave these options empty, every person and group will be able to use the bot.**
 4. You can also specify the command to invoke the bot in group chats. The default command is `/chat`.
 
